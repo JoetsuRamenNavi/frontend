@@ -34,7 +34,11 @@ const BottomMenu: NextPage = () => {
     <div className="w-full h-[65px] bg-white flex justify-around items-center">
       {/* 第一引数： (URL) , 第二引数： (アイコン名) */}
       {setMenuButton("/", "ramen")}
-      {setMenuButton("/Search", "search")}
+
+      {router.pathname != "/stores/[id]"
+        ? setMenuButton("/Search", "search")
+        : setIcon(`/icon/bottomMenu/searchSelected.png`, "search")}
+
       {setMenuButton("/Mypage", "user")}
     </div>
   );
