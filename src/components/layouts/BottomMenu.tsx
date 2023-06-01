@@ -14,7 +14,7 @@ const BottomMenu: NextPage = () => {
   const setIcon = (src: string, link: string) => {
     return (
       <Link href={link}>
-        <Image src={src} alt="" width={iconSize} height={iconSize} />;
+        <Image src={src} alt="" width={iconSize} height={iconSize} />
       </Link>
     );
   };
@@ -31,7 +31,7 @@ const BottomMenu: NextPage = () => {
   };
 
   return (
-    <div className="w-full h-[65px] bg-white flex justify-around items-center">
+    <div className="w-full h-[65px] fixed bottom-0 bg-white flex justify-around items-center">
       {/* 第一引数： (URL) , 第二引数： (アイコン名) */}
       {setMenuButton("/", "ramen")}
 
