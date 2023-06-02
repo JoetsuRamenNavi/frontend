@@ -9,7 +9,7 @@ type props = {
 const Layout: NextPage<props> = ({ children }) => {
   return (
     <>
-      <div className="aaa w-screen h-screen flex flex-col justify-between items-center">
+      <div className="aaa w-full flex flex-col items-center pt-[65px] pb-[65px]">
         <Header />
         {children}
         <BottomMenu />

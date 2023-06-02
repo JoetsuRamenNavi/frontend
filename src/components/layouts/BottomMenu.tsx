@@ -31,7 +31,7 @@ const BottomMenu: NextPage = () => {
   };
 
   return (
-    <div className="w-full h-[65px] fixed bottom-0 bg-white flex justify-around items-center">
+    <div className="w-full h-[65px] fixed bottom-0 left-0 bg-white flex justify-around items-center bottomMenuShadow">
       {/* 第一引数： (URL) , 第二引数： (アイコン名) */}
       {setMenuButton("/", "ramen")}
 
