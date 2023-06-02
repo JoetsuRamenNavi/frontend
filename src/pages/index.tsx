@@ -2,6 +2,8 @@
 import Layout from "@/components/layouts/Layout";
 import { entryStores } from "@/components/utils/entryStore";
 import useWindowSize from "@/hooks/useWindowSize";
+import { Button } from "@mui/material";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -47,6 +49,20 @@ export default function Home() {
                 </div>
               </div>
               <img className="w-full" src={store.img} alt="" />
+              <div className="flex justify-end m-[8px]">
+                <Link href={`/stores/${store.id}`}>
+                  <Button
+                    variant="contained"
+                    style={{
+                      color: "#fff",
+                      borderColor: "#d5a347",
+                      backgroundColor: "#d5a347",
+                    }}
+                  >
+                    詳細を見る
+                  </Button>
+                </Link>
+              </div>
             </div>
           ))}
         </div>
