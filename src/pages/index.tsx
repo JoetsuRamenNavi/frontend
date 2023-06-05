@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/layouts/Layout";
-import { entryStores } from "@/components/utils/entryStore";
+import { stores } from "@/components/utils/storesData";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button } from "@mui/material";
 import Link from "next/link";
@@ -36,19 +36,19 @@ export default function Home() {
           <p className="text-[20px] font-bold text-center">
             エントリー店舗の紹介
           </p>
-          {entryStores.map((store, index) => (
+          {stores.map((store, index) => (
             <div
               key={index}
               className="w-full bg-[#FAEACEAA] my-[30px] py-[20px] px-[15px]"
             >
               <div className="px-[15px]">
-                <p className="text-[18px] my-[10px] font-bold">{store.store}</p>
+                <p className="text-[18px] my-[10px] font-bold">{store.name}</p>
                 <div className="flex justify-between mb-[15px]">
-                  <p className="text-[16px]">「 {store.name} 」</p>
-                  <p className="text-[16px]">{store.price} 円</p>
+                  <p className="text-[16px]">「 {store.entry.name} 」</p>
+                  <p className="text-[16px]">{store.entry.price} 円</p>
                 </div>
               </div>
-              <img className="w-full" src={store.img} alt="" />
+              <img className="w-full" src={store.entry.img} alt="" />
               <div className="flex justify-end m-[8px]">
                 <Link href={`/stores/${store.id}`}>
                   <Button
