@@ -33,9 +33,10 @@ const SignIn: React.FC<SignInProps> = ({ users, setShowSignUp }) => {
         type="password"
         placeholder="Password"
       />
-      <button type="submit">Sign In</button>
+      <button type="submit">ログイン</button>
+      <br />
       <button type="button" onClick={() => setShowSignUp(true)}>
-        New User? Sign Up Here
+        新規登録はこちら
       </button>
     </form>
   );
