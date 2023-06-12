@@ -1,22 +1,22 @@
-import { NextPage } from "next";
 import { useForm } from "react-hook-form";
 import { User } from "../utils/apiMockData";
 
 type SignInProps = {
   users: User[];
+  setShowSignUp: (showSignUp: boolean) => void;
 };
 
 type FormData = {
-  id: number;
+  id: string;
   password: string;
 };
 
-const SignIn: React.FC<SignInProps> = ({ users }) => {
+const SignIn: React.FC<SignInProps> = ({ users, setShowSignUp }) => {
   const { register, handleSubmit } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
     const user = users.find(
-      (user) => user.id === data.id && user.password === data.password
+      (user) => user.id === parseInt(data.id) && user.password === data.password
     );
     if (user) {
       console.log("ログイン成功！");
@@ -34,6 +34,9 @@ const SignIn: React.FC<SignInProps> = ({ users }) => {
         placeholder="Password"
       />
       <button type="submit">Sign In</button>
+      <button type="button" onClick={() => setShowSignUp(true)}>
+        New User? Sign Up Here
+      </button>
     </form>
   );
 };

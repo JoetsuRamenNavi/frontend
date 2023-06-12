@@ -31,3 +31,21 @@ type userPage = {
   age: number;
   favorite_store: number;
 };
+
+export const mockUserData: User[] = [
+  {
+    id: 1,
+    name: "User1",
+    password: "password1",
+    age: 20,
+    favorite_store: 1,
+  },
+  {
+    id: 2,
+    name: "User2",
+    password: "password2",
+    age: 30,
+    favorite_store: 2,
+  },
+  // 他のユーザーデータを追加...
+];
