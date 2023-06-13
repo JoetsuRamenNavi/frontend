@@ -2,6 +2,7 @@ export const stores: store[] = [
   {
     id: 0,
     name: "手打ちらーめん まるとく",
+    topImage: "/top/entry/entry5.jpg",
     entry: {
       name: "酒かす鶏ポタージュ",
       price: 1000,
@@ -60,6 +61,7 @@ export const stores: store[] = [
   {
     id: 1,
     name: "春紀",
+    topImage: "/top/entry/entry6.jpg",
     entry: {
       name: "酒かすラーメン 白味噌仕立て",
       price: 1000,
@@ -118,6 +120,7 @@ export const stores: store[] = [
   {
     id: 2,
     name: "比他棒（ビーターバン）",
+    topImage: "/top/entry/entry7.jpg",
     entry: {
       name: "高田ビャンビャン麺",
       price: 1650,
@@ -176,6 +179,7 @@ export const stores: store[] = [
   {
     id: 3,
     name: "龍馬軒",
+    topImage: "/top/entry/entry8.jpg",
     entry: {
       name: "甘えび坦坦麺 酒かす仕立て",
       price: 1250,
@@ -234,6 +238,7 @@ export const stores: store[] = [
   {
     id: 4,
     name: "はな禅",
+    topImage: "/top/entry/entry9.jpg",
     entry: {
       name: "雪むろ酒かすラーメン",
       price: 1600,
@@ -292,6 +297,7 @@ export const stores: store[] = [
   {
     id: 5,
     name: "宝来軒総本店",
+    topImage: "/top/entry/entry10.jpg",
     entry: {
       name: "菜膳 酒かす味噌タンメン",
       price: 1000,

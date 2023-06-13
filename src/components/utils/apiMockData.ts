@@ -9,6 +9,7 @@ type user = {
 type store = {
   id: number;
   name: string;
+  topImage: string;
   entry: {
     name: string;
     price: number;
