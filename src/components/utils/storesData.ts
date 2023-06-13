@@ -1,4 +1,4 @@
-export const stores = [
+export const stores: store[] = [
   {
     id: 0,
     name: "手打ちらーめん まるとく",
@@ -37,10 +37,12 @@ export const stores = [
         "/top/entry/entry8.jpg",
       ],
       name: ["醤油ラーメン", "塩ラーメン", "豚骨ラーメン", "油そば"],
+      battle: [true, false, false, false],
       price: [900, 1000, 1100, 950],
     },
     reputation: {
       star: [8, 7, 10, 5],
+      storeTime: [true, false, false, true],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -93,10 +95,12 @@ export const stores = [
         "/top/entry/entry8.jpg",
       ],
       name: ["醤油ラーメン", "塩ラーメン", "豚骨ラーメン", "油そば"],
+      battle: [true, false, false, false],
       price: [900, 1000, 1100, 950],
     },
     reputation: {
       star: [9, 3, 8, 1],
+      storeTime: [true, false, false, true],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -149,10 +153,12 @@ export const stores = [
         "/top/entry/entry8.jpg",
       ],
       name: ["醤油ラーメン", "塩ラーメン", "豚骨ラーメン", "油そば"],
+      battle: [true, false, false, false],
       price: [900, 1000, 1100, 950],
     },
     reputation: {
       star: [6, 5, 7, 5],
+      storeTime: [true, false, false, true],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -205,10 +211,12 @@ export const stores = [
         "/top/entry/entry8.jpg",
       ],
       name: ["醤油ラーメン", "塩ラーメン", "豚骨ラーメン", "油そば"],
+      battle: [true, false, false, false],
       price: [900, 1000, 1100, 950],
     },
     reputation: {
       star: [10, 5, 10, 2],
+      storeTime: [true, false, false, true],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -261,10 +269,12 @@ export const stores = [
         "/top/entry/entry8.jpg",
       ],
       name: ["醤油ラーメン", "塩ラーメン", "豚骨ラーメン", "油そば"],
+      battle: [true, false, false, false],
       price: [900, 1000, 1100, 950],
     },
     reputation: {
       star: [10, 8, 10, 7],
+      storeTime: [true, false, false, true],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -317,10 +327,12 @@ export const stores = [
         "/top/entry/entry8.jpg",
       ],
       name: ["醤油ラーメン", "塩ラーメン", "豚骨ラーメン", "油そば"],
+      battle: [true, false, false, false],
       price: [900, 1000, 1100, 950],
     },
     reputation: {
       star: [8, 6, 10, 4],
+      storeTime: [true, false, false, true],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
