@@ -40,7 +40,7 @@ export const stores = [
       price: [900, 1000, 1100, 950],
     },
     reputation: {
-      star: [8, 7, 10, 4],
+      star: [8, 7, 10, 5],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -96,7 +96,7 @@ export const stores = [
       price: [900, 1000, 1100, 950],
     },
     reputation: {
-      star: [8, 7, 10, 4],
+      star: [9, 3, 8, 1],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -152,7 +152,7 @@ export const stores = [
       price: [900, 1000, 1100, 950],
     },
     reputation: {
-      star: [8, 7, 10, 4],
+      star: [6, 5, 7, 5],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -208,7 +208,7 @@ export const stores = [
       price: [900, 1000, 1100, 950],
     },
     reputation: {
-      star: [8, 7, 10, 4],
+      star: [10, 5, 10, 2],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -264,7 +264,7 @@ export const stores = [
       price: [900, 1000, 1100, 950],
     },
     reputation: {
-      star: [8, 7, 10, 4],
+      star: [10, 8, 10, 7],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",
@@ -320,7 +320,7 @@ export const stores = [
       price: [900, 1000, 1100, 950],
     },
     reputation: {
-      star: [8, 7, 10, 4],
+      star: [8, 6, 10, 4],
       title: [
         "めちゃくちゃおいしかった！！",
         "ふつう",

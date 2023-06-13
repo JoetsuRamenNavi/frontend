@@ -12,7 +12,7 @@ const Layout: NextPage<props> = ({ children }) => {
       <div className="aaa w-full flex flex-col items-center pt-[65px] pb-[65px]">
         <Header />
         {children}
-        <BottomMenu />
+        {/* <BottomMenu /> */}
       </div>
     </>
   );
