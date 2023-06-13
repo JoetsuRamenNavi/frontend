@@ -3,7 +3,12 @@ type user = {
   name: string;
   password: string;
   age: number;
-  favorite_store: number;
+  battle: {
+    date: string[];
+    flg: boolean[];
+    store: string[];
+    name: string[];
+  };
 };
 
 type store = {
