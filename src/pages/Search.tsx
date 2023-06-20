@@ -15,6 +15,34 @@ import { NextPage } from "next";
 import Link from "next/link";
 import { ChangeEvent, useRef, useState } from "react";
 
+// 星評価
+export const averageStar = (id: number) => {
+  let num = 0;
+  let firstDecimalPoint = 0;
+
+  // スコア値の合算
+  for (let i = 0; i < stores[id].reputation.star.length; i++) {
+    num += stores[id].reputation.star[i];
+  }
+
+  // 平均値の算出
+  num = num / stores[id].reputation.star.length;
+
+  // 第一小数点取得
+  firstDecimalPoint = Math.floor((num - Math.floor(num)) * 10);
+
+  if (0 <= firstDecimalPoint && firstDecimalPoint < 5) {
+    // 切り捨て
+    return Math.floor(num);
+  } else if (5 <= firstDecimalPoint && firstDecimalPoint <= 10) {
+    // 切り上げ
+    return Math.ceil(num);
+  } else {
+    // エラーハンドリング
+    return 0;
+  }
+};
+
 const Search: NextPage = () => {
   const [searchValue, setSearchValue] = useState("");
   const [soup, setSoup] = useState("");
@@ -55,34 +83,6 @@ const Search: NextPage = () => {
     setSoup("");
     setStyle("");
     setMen("");
-  };
-
-  // 星評価
-  const averageStar = (id: number) => {
-    let num = 0;
-    let firstDecimalPoint = 0;
-
-    // スコア値の合算
-    for (let i = 0; i < stores[id].reputation.star.length; i++) {
-      num += stores[id].reputation.star[i];
-    }
-
-    // 平均値の算出
-    num = num / stores[id].reputation.star.length;
-
-    // 第一小数点取得
-    firstDecimalPoint = Math.floor((num - Math.floor(num)) * 10);
-
-    if (0 <= firstDecimalPoint && firstDecimalPoint < 5) {
-      // 切り捨て
-      return Math.floor(num);
-    } else if (5 <= firstDecimalPoint && firstDecimalPoint <= 10) {
-      // 切り上げ
-      return Math.ceil(num);
-    } else {
-      // エラーハンドリング
-      return 0;
-    }
   };
 
   // 検索バー　レイアウト

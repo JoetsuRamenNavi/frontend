@@ -21,6 +21,7 @@ type store = {
     men: string[];
     address: string[];
     pay: string[];
+    time: string[];
     seat: {
       table: number;
       counter: number;

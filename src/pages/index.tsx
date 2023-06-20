@@ -66,10 +66,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="w-full my-[40px]">
-          <p className="text-[20px] font-bold text-center">ラーメンマップ</p>
-          <div className=""></div>
-        </div>
       </Layout>
     </>
   );
