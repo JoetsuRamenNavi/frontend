@@ -9,6 +9,7 @@ type user = {
 type store = {
   id: number;
   name: string;
+  topImage: string;
   entry: {
     name: string;
     price: number;
@@ -20,6 +21,7 @@ type store = {
     men: string[];
     address: string[];
     pay: string[];
+    time: string[];
     seat: {
       table: number;
       counter: number;

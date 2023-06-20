@@ -2,6 +2,7 @@ export const stores: store[] = [
   {
     id: 0,
     name: "手打ちらーめん まるとく",
+    topImage: "/top/entry/entry5.jpg",
     entry: {
       name: "酒かす鶏ポタージュ",
       price: 930,
@@ -11,7 +12,12 @@ export const stores: store[] = [
       soup: ["鶏白湯"],
       style: ["ラーメン"],
       men: ["中太ストレート麺"],
-      address: ["942-0063", "新潟県上越市下門前770"],
+      time: ["11:00 ~ 14:00", "17:30 ~ 20:30"],
+      address: [
+        "942-0063",
+        "新潟県上越市下門前2287",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.6084543463817!2d138.24815681244004!3d37.16200867202995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff6778c837e1bc9%3A0xa589b95f578276d5!2z5omL5omT44Gh44KJ44Cc44KB44KTIOOBvuOCi-OBqOOBjw!5e0!3m2!1sja!2sjp!4v1686831400928!5m2!1sja!2sjp",
+      ],
       pay: ["現金"],
       seat: {
         table: 20,
@@ -60,17 +66,23 @@ export const stores: store[] = [
   {
     id: 1,
     name: "春紀",
+    topImage: "/top/entry/entry6.jpg",
     entry: {
       name: "酒かすラーメン 白味噌仕立て",
       price: 1000,
       img: "/top/entry/entry6.jpg",
     },
     main: {
-      soup: ["塩", "醤油","味噌"],
-      style: ["ラーメン","つけ麺"],
+      soup: ["塩", "醤油", "味噌"],
+      style: ["ラーメン", "つけ麺"],
       men: ["太麺"],
-      address: ["944-0141", "新潟県上越市板倉区田井213-1"],
-      pay: ["現金","PayPay"],
+      time: ["11:00 ~ 14:00"],
+      address: [
+        "944-0141",
+        "新潟県上越市板倉区田井213",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.752361262179!2d138.283686312437!3d37.06338407205711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff673716a99e8af%3A0x7ccf8083d27f5073!2z5pil57SA!5e0!3m2!1sja!2sjp!4v1686831155408!5m2!1sja!2sjp",
+      ],
+      pay: ["現金", "PayPay"],
       seat: {
         table: 13,
         counter: 5,
@@ -118,17 +130,23 @@ export const stores: store[] = [
   {
     id: 2,
     name: "比他棒（ビーターバン）",
+    topImage: "/top/entry/entry7.jpg",
     entry: {
       name: "高田ビャンビャン麺",
       price: 1650,
       img: "/top/entry/entry7.jpg",
     },
     main: {
-      soup: ["担々スープ",],
+      soup: ["担々スープ"],
       style: ["ラーメン", "つけ麺"],
       men: ["細麺"],
-      address: ["943-0825", "新潟県上越市東本町3-2-59"],
-      pay: ["現金", "クレジットカード","PayPay","電子マネー"],
+      time: ["11:00 ~ 13:00"],
+      address: [
+        "943-0821",
+        "新潟県上越市土橋783-4",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.877947802329!2d138.24184801243908!3d37.13181867203833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff67711892d67e1%3A0xe3fe6d47b9bf53b3!2z44CSOTQzLTA4MjEg5paw5r2f55yM5LiK6LaK5biC5Zyf5qmL77yX77yY77yT4oiS77yUIOavlOS7luajkg!5e0!3m2!1sja!2sjp!4v1686831055208!5m2!1sja!2sjp",
+      ],
+      pay: ["現金", "クレジットカード", "PayPay", "電子マネー"],
       seat: {
         table: 31,
         counter: 10,
@@ -176,17 +194,23 @@ export const stores: store[] = [
   {
     id: 3,
     name: "龍馬軒",
+    topImage: "/top/entry/entry8.jpg",
     entry: {
       name: "甘えび坦坦麺 酒かす仕立て",
       price: 1250,
       img: "/top/entry/entry8.jpg",
     },
     main: {
-      soup: ["担々スープ","醤油","塩"],
-      style: ["ラーメン",],
+      soup: ["担々スープ", "醤油", "塩"],
+      style: ["ラーメン"],
       men: ["細麺"],
-      address: ["943-0884", "新潟県上越市上中田2026"],
-      pay: ["現金",],
+      time: ["11:00 ~ 14:00", "17:30 ~ 20:30"],
+      address: [
+        "943-0884",
+        "新潟県上越市上中田2026",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.570708790499!2d138.2322811124379!3d37.09153017204949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff6714226a8140f%3A0x84ae0ab28e1e378c!2z6b6N6aas6LuS!5e0!3m2!1sja!2sjp!4v1686830621935!5m2!1sja!2sjp",
+      ],
+      pay: ["現金"],
       seat: {
         table: 24,
         counter: 14,
@@ -234,6 +258,7 @@ export const stores: store[] = [
   {
     id: 4,
     name: "はな禅",
+    topImage: "/top/entry/entry9.jpg",
     entry: {
       name: "雪むろ酒かすラーメン",
       price: 900,
@@ -243,8 +268,13 @@ export const stores: store[] = [
       soup: ["魚介塩ダレ", "醤油"],
       style: ["ラーメン", "つけ麺"],
       men: ["中太"],
-      address: ["943-0882", "新潟県上越市中田原105-8"],
-      pay: ["現金",],
+      time: ["11:00 ~ 13:00"],
+      address: [
+        "943-0882",
+        "新潟県上越市中田原105-8",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1295.5217203824157!2d138.23577551075775!3d37.09516094071401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff671471c5dd5b5%3A0x3df8827e3a844309!2z44Gv44Gq56aF!5e0!3m2!1sja!2sjp!4v1686829714343!5m2!1sja!2sjp",
+      ],
+      pay: ["現金"],
       seat: {
         table: 4,
         counter: 4,
@@ -252,7 +282,7 @@ export const stores: store[] = [
       tel: "025-522-9255",
       budgetLunch: 1000,
       budgetNight: 1000,
-      holiday: ["月","火"],
+      holiday: ["月", "火"],
       images: [
         "/top/entry/entry5.jpg",
         "/top/entry/entry6.jpg",
@@ -292,17 +322,23 @@ export const stores: store[] = [
   {
     id: 5,
     name: "宝来軒総本店",
+    topImage: "/top/entry/entry10.jpg",
     entry: {
       name: "菜膳 酒かす味噌タンメン",
       price: 1000,
       img: "/top/entry/entry10.jpg",
     },
     main: {
-      soup: ["味噌", "醤油","豚骨"],
-      style: ["ラーメン","つけ麺"],
+      soup: ["味噌", "醤油", "豚骨"],
+      style: ["ラーメン", "つけ麺"],
       men: ["自家製太麺"],
-      address: ["943-0833", "新潟県上越市大町4-1-5"],
-      pay: ["現金",],
+      time: ["11:30 ~ 15:00", "17:30 ~ 20:30"],
+      address: [
+        "943-0833",
+        " 新潟県上越市大町4丁目1-5",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.569300777256!2d138.2435007124387!3d37.11536867204284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff676d99ce75457%3A0x76843506a8ce7d1d!2z5a6d5p2l6LuSIOe3j-acrOW6lw!5e0!3m2!1sja!2sjp!4v1686830484014!5m2!1sja!2sjp",
+      ],
+      pay: ["現金"],
       seat: {
         table: 12,
         counter: 50,
@@ -310,7 +346,7 @@ export const stores: store[] = [
       tel: "025-523-3415",
       budgetLunch: 800,
       budgetNight: 800,
-      holiday: ["木","不定期"],
+      holiday: ["木", "不定期"],
       images: [
         "/top/entry/entry5.jpg",
         "/top/entry/entry6.jpg",
