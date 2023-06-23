@@ -64,7 +64,10 @@ const Header: NextPage = () => {
             <div className="mb-[12px] text-[20px]">
               <ListItem>{users[0].name} さん</ListItem>
             </div>
-            {listItem("マイページ", "auth/Signin")}
+            {/* 6/22　マイページ作成用の仮リンク、ログイン機能実装後削除 */}
+            {listItem("マイページ", "/Mypage")} 
+            {/* 6/22　マイページ作成、ログイン機能未実装のため一度コメントアウトしてる。ログイン機能実装後コメント外してほしい */}
+            {/* {listItem("マイページ", "auth/Signin")} */}
             {listItem("会員情報の確認", "auth/Signup")}
             {listItem("ラーメンバトル投票履歴", "/")}
             {listItem("ログアウト", "/")}
