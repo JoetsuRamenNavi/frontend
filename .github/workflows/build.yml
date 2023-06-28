@@ -23,6 +23,7 @@ jobs:
         with: 
           name: pages
           path: .next/**
+          retention-days: 1
 
 
     
