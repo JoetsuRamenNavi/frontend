@@ -19,7 +19,7 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - users: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3
         with: 
           name: pages
           path: .next/**
