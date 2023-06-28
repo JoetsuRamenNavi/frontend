@@ -18,11 +18,12 @@ jobs:
       
       - run: npm install
       - run: npm run build
+      - run: npm run export
 
       - uses: actions/upload-artifact@v3
         with: 
           name: pages
-          path: .next/**
+          path: out/**
           retention-days: 1
 
 
