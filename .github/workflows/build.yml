@@ -36,7 +36,7 @@ jobs:
           path: out
     
       - name: Deploy to Azure VM
-        uses: easingthemes/ssh-deploy@v2.1.11
+        uses: easingthemes/ssh-deploy@v2
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-avz --delete" # Use rsync to upload the build directory to server
