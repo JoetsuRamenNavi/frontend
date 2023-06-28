@@ -31,19 +31,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v3
-        with: 
+        with:
           name: out
           path: out
-    
-      - name: Deploy to Azure VM
-        uses: easingthemes/ssh-deploy@v2
+
+      - uses: shimataro/ssh-key-action@v2
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-avz --delete" # Use rsync to upload the build directory to server
-          SOURCE: "out/"
-          REMOTE_HOST: "4.216.193.15"
-          REMOTE_USER: "azureuser"
-          TARGET: "/var/www/html/frontend"
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS_OF_BASTION }}
+
+      - run: rsync -v out azureuser@4.216.193.15:/var/www/html
+      
 
     
 
