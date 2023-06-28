@@ -33,14 +33,14 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: out
-          path: out
+          path: out/**
 
       - uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS_OF_BASTION }}
 
-      - run: rsync -v out/* azureuser@4.216.193.15:/var/www/html/out
+      - run: rsync -v out/** azureuser@4.216.193.15:/var/www/html/out
       
 
     
