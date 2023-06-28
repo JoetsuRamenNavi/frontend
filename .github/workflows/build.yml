@@ -40,7 +40,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS_OF_BASTION }}
 
-      - run: rsync -v out/* azureuser@4.216.193.15:/var/www/html
+      - run: rsync -v out/* azureuser@4.216.193.15:/var/www/html/out
       
 
     
