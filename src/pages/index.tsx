@@ -5,7 +5,9 @@ const Home: NextPage = () => {
   return (
     <>
       <Layout>
-        <div className="">enter</div>
+        <div className="">
+          <p>enter 上越ラーメン</p>
+        </div>
       </Layout>
     </>
   );
