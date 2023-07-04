@@ -7,12 +7,14 @@ const Header: NextPage = () => {
   return (
     <>
       <div
-        className={`h-[65px] w-full ${theme.main.bg} flex justify-between items-center`}
+        className={`h-[65px] w-full ${theme.main.bg} flex justify-between items-center px-[16px]`}
       >
         <Link href={"/"}>
-          <img src="/logo.png" alt="ロゴ" width={390} />
+          <img src="/logo.png" alt="ロゴ" width={224} />
         </Link>
-        <div className={`${theme.accent.bg} ${theme.base.text} px-[4px]`}>
+        <div
+          className={`${theme.accent.bg} ${theme.base.text} px-[12px] py-[4px]`}
+        >
           ログイン
         </div>
       </div>
