@@ -1,9 +1,23 @@
+/* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
+import Link from "next/link";
+import { theme } from "../themes/color";
 
 const Header: NextPage = () => {
   return (
     <>
-      <div className=""></div>
+      <div
+        className={`h-[65px] w-full ${theme.main.bg} flex justify-between items-center px-[16px]`}
+      >
+        <Link href={"/"}>
+          <img src="/logo.png" alt="ロゴ" width={224} />
+        </Link>
+        <div
+          className={`${theme.accent.bg} ${theme.base.text} px-[12px] py-[4px]`}
+        >
+          ログイン
+        </div>
+      </div>
     </>
   );
 };
