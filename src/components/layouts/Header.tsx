@@ -13,7 +13,7 @@ const Header: NextPage = () => {
           <img src="/logo.png" alt="ロゴ" width={224} />
         </Link>
         <div
-          className={`${theme.accent.bg} ${theme.base.text} px-[12px] py-[4px]`}
+          className={`${theme.accent.bg} ${theme.base.text} px-[12px] py-[4px] text-[16px]`}
         >
           ログイン
         </div>
