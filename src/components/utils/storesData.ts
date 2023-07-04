@@ -28,8 +28,8 @@ export const stores: store[] = [
       budgetNight: 950,
       holiday: ["火"],
       images: [
-        "/top/entry/entry5.jpg",
-        "/top/entry/entry6.jpg",
+        "/ramen-images/marutoku-mise.jpg",
+        "/ramen-images/marutoku-menu.jpg",
         "/top/entry/entry7.jpg",
         "/top/entry/entry8.jpg",
         "/top/entry/entry9.jpg",
@@ -261,7 +261,7 @@ export const stores: store[] = [
     topImage: "/top/entry/entry9.jpg",
     entry: {
       name: "雪むろ酒かすラーメン",
-      price: 1600,
+      price: 900,
       img: "/top/entry/entry9.jpg",
     },
     main: {
