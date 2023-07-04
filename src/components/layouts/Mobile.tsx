@@ -16,7 +16,7 @@ const Mobile: NextPage<props> = ({ children }) => {
       </div>
 
       {/* モバイルのみ */}
-      {/* <div className="w-full h-full max-w-[414px] bg-teal-300">{children}</div> */}
+      {/* <div className={`w-full h-full max-w-[414px] ${theme.base.bg}`}>{children}</div> */}
     </>
   );
 };
