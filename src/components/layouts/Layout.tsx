@@ -1,6 +1,5 @@
 import { NextPage } from "next";
-import Header from "./Header";
-import BottomMenu from "./BottomMenu";
+import Mobile from "./Mobile";
 
 type props = {
   children: React.ReactNode;
@@ -9,10 +8,8 @@ type props = {
 const Layout: NextPage<props> = ({ children }) => {
   return (
     <>
-      <div className="aaa w-full flex flex-col items-center pt-[65px] pb-[65px]">
-        <Header />
-        {children}
-        {/* <BottomMenu /> */}
+      <div className="w-full h-screen bg-orange-300 flex justify-center items-center">
+        <Mobile>{children}</Mobile>
       </div>
     </>
   );
