@@ -4,6 +4,7 @@ import Link from "next/link";
 import { theme } from "../themes/color";
 
 const Header: NextPage = () => {
+
   return (
     <>
       <div

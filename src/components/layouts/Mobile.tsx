@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Header from "./Header";
+import Footer from "./Footer";
 import { theme } from "../themes/color";
 
 type props = {
@@ -13,6 +14,7 @@ const Mobile: NextPage<props> = ({ children }) => {
       <div className={`w-full h-full max-w-[820px] ${theme.base.bg}`}>
         <Header />
         {children}
+        <Footer />
       </div>
 
       {/* モバイルのみ */}
