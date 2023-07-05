@@ -30,15 +30,17 @@ const Mypage: NextPage = () => {
 
     {/* 表示してる場所 */}
       <Layout>
-        <div className=" w-[90%] ">
-          <p className="text-left text-lg my-5 ">マイページ</p>
+        <div className=" mx-[15px]">
+          <p className="text-left text-lg my-[30px] font-bold">マイページ</p>
 
         <div className="bg-[#000] h-[200px] flex items-end rounded-xl">
           {/* 要調整 */}
           <div className=" m-[20px] w-[60%] text-white">
-          <p className="text-lg pb-[45%]">上越ラーメン会員</p>
-          <div className="text-lg">{users[name].name}</div>
-          <div className="text-xs">ID　{users[id].id}</div>
+          <img src="/Members.png" alt="会員証" width={224} />
+          <div className="flex">
+          <div className="text-lg font-bold">{users[name].name}i</div>
+          <img src="/ramen.png" alt="ラーメンアイコン" width={100} />
+          </div>
           </div>
         </div>
 
