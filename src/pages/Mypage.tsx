@@ -4,6 +4,7 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
+
 import { NextPage } from "next";
 import Link from "next/link";
 import { useState } from "react";
@@ -26,6 +27,7 @@ const Mypage: NextPage = () => {
 
   return (
     <>
+
     {/* 表示してる場所 */}
       <Layout>
         <div className=" w-[90%] ">
@@ -54,6 +56,8 @@ const Mypage: NextPage = () => {
 
         </div>
       </Layout>
+      
+      <div>myPage</div>
     </>
   );
 };

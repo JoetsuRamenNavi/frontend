@@ -1,0 +1,52 @@
+name: Build Test
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: setup
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - run: npm install
+      - run: npm run build
+      - run: npm run export
+
+      - uses: actions/upload-artifact@v3
+        with: 
+          name: out
+          path: out/**
+          retention-days: 1
+  deploy:
+    needs: build
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: out
+          path: out
+
+      - uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS_OF_BASTION }}
+
+      - run: rsync -av out/ azureuser@4.216.193.15:/var/www/html/out
+      
+
+    
+
+
+
+    
+
+    
