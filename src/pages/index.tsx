@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         </div>
         {/* ----最後で消す (end)------ */}
         <TopHeader />
-        {IsEvent()}
+        <div className="w-full">{IsEvent()}</div>
       </Layout>
     </>
   );
