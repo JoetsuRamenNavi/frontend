@@ -10,14 +10,22 @@ type battleChildren = {
 };
 
 type ranking = {
-  first: rankingStore;
-  second: rankingStore;
-  third: rankingStore;
+  first: rankingEntryStore;
+  second: rankingEntryStore;
+  third: rankingEntryStore;
 };
 
-type rankingStore = {
+type rankingEntryStore = {
   store: string;
   name: string;
   price: number;
   image: string;
+};
+
+type entryStore = {
+  store: string;
+  name: string;
+  price: number;
+  image: string;
+  votes: number;
 };
