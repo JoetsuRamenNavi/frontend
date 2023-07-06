@@ -15,7 +15,7 @@ const Footer: NextPage = () => {
           <img src="/logo.png" alt="ロゴ" width={224} />
         </Link>
         </div>
-      <p className=" text-white font-bold">© JoetshRamenNavi All rights Reserved.</p>
+      <p className=" text-white font-bold text-[8px]">© JoetshRamenNavi All rights Reserved.</p>
         
       </div>
     </>
