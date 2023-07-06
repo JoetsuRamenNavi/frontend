@@ -46,6 +46,13 @@ type store = {
   };
 };
 
+type mypage =  {
+  id: number;
+  image: string;
+  text: string;
+  link: string;
+};
+
 // type store = {
 //   id: number;
 //   store_name: string;
