@@ -35,12 +35,12 @@ const Mypage: NextPage = () => {
             <ul className="my-14  border-t-[1px] border-black">
               {/* utilsにmypage配列作ったのでそれを回してる */}
               {mypages.map((list, index) => (
-                <div className="flex">
-                  <div key={index} className="w-full">
+                <div className="flex ">
+                  <div key={index} className="w-full ">
                     <Link href={list.link}>
-                      <ListItem sx={{ borderBottom: "1px solid #333"}}>
-                        <img src={list.image} />
-                        <ListItemText>{list.text}</ListItemText>
+                      <ListItem sx={{ borderBottom: "1px solid #333" }}>
+                        <img src={list.image} className="mr-[15px] "/>
+                        <ListItemText sx={{ marginY: "15px",}}>{list.text}</ListItemText>
                       </ListItem>
                     </Link>
                   </div>
