@@ -9,7 +9,7 @@ const BeforeCnt: NextPage = () => {
   const battle = battleDt.The1st;
 
   // ランキングコンテンツ
-  const rankingContent = (ranking: rankingStore, icon: string) => {
+  const rankingContent = (ranking: rankingEntryStore, icon: string) => {
     return (
       <>
         <div className="w-full h-[310px] px-[16px] mb-[32px] relative">
