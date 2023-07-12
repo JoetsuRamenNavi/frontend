@@ -17,8 +17,9 @@ jobs:
           node-version: '18'
       
       - run: npm install
-      - run: npm run build
-      - run: npm run export
+      - run: yarn dev
+      - run: yarn build
+      - run: yarn export
 
       - uses: actions/upload-artifact@v3
         with: 
