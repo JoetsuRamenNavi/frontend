@@ -3,7 +3,7 @@ export const mypages: mypage[] = [
         id: 0,
         image: "/Members.png",
         text: "会員情報",
-        link: "/",
+        link: "/Members",
     },
     {
         id: 1,
@@ -25,3 +25,21 @@ export const mypages: mypage[] = [
     },
     // menuba
 ];
+
+// export const members : member[] = [
+//     {
+//         id:0,
+//         text:"ニックネーム",
+//         link: "",
+//     },
+//     {
+//         id:1,
+//         text:"メールアドレス",
+//         link: "",
+//     },
+//     {
+//         id:2,
+//         text:"パスワード",
+//         link: "",
+//     },
+// ]

@@ -53,6 +53,12 @@ type mypage =  {
   link: string;
 };
 
+type member = {
+  id: number;
+  text: string;
+  link: string;
+}
+
 // type store = {
 //   id: number;
 //   store_name: string;
