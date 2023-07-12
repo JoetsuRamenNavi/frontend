@@ -23,9 +23,14 @@ type rankingEntryStore = {
 };
 
 type entryStore = {
+  id: number;
   store: string;
   name: string;
   price: number;
   image: string;
   votes: number;
+  comment: string | null;
+  address: string;
+  tel: string;
+  url: string | null;
 };
