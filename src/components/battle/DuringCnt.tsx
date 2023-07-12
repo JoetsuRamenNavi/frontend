@@ -2,6 +2,7 @@
 import { NextPage } from "next";
 import { entryDt } from "../utils/entryData";
 import { theme } from "../themes/color";
+import Link from "next/link";
 
 const DuringCnt: NextPage = () => {
   return (
@@ -23,13 +24,15 @@ const DuringCnt: NextPage = () => {
         <h2 className="text-center my-[24px]">エントリー店舗の紹介</h2>
         {entryDt.map((store, index) => (
           <div key={index} className="w-full flex flex-col items-center">
-            <div className="w-[360px] h-[310px] px-[16px] mb-[32px]">
-              <img className="my-[16px]" src={store.image} alt="" />
-              <span className="text-[14px] text-[#777]">{store.name}</span>
-              <h2>
-                {store.name} {store.price}円
-              </h2>
-            </div>
+            <Link href={`/entry/${store.id}`}>
+              <div className="w-[360px] h-[310px] px-[16px] mb-[32px]">
+                <img className="my-[16px]" src={store.image} alt="" />
+                <span className="text-[14px] text-[#777]">{store.name}</span>
+                <h2>
+                  {store.name} {store.price}円
+                </h2>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
