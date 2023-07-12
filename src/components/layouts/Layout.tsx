@@ -10,7 +10,7 @@ const Layout: NextPage<props> = ({ children }) => {
   return (
     <>
       <div
-        className={`w-full h-screen ${theme.accent.bg} flex justify-center items-center`}
+        className={`w-full h-full ${theme.accent.bg} left-0 flex justify-center items-center`}
       >
         <Mobile>{children}</Mobile>
       </div>
