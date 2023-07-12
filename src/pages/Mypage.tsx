@@ -35,7 +35,7 @@ const Mypage: NextPage = () => {
             <ul className="my-14  border-t-[1px] border-black">
               {/* utilsにmypage配列作ったのでそれを回してる */}
               {mypages.map((list, index) => (
-                <div className="flex ">
+                <div key={index} className="flex ">
                   <div key={index} className="w-full ">
                     <Link href={list.link}>
                       <ListItem sx={{ borderBottom: "1px solid #333" }}>
