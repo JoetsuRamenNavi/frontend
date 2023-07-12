@@ -12,13 +12,19 @@ const BeforeCnt: NextPage = () => {
   const rankingContent = (ranking: rankingEntryStore, icon: string) => {
     return (
       <>
-        <div className="w-full h-[310px] px-[16px] mb-[32px] relative">
-          <img className="absolute top-[8px] right-[24px]" src={icon} alt="" />
-          <img className="my-[16px]" src={ranking.image} alt="" />
-          <span className="text-[14px] text-[#777]">{ranking.store}</span>
-          <h2>
-            {ranking.name} {ranking.price}円
-          </h2>
+        <div className="w-full flex flex-col items-center">
+          <div className="w-[360px] h-[310px] px-[16px] mb-[32px] relative">
+            <img
+              className="absolute top-[16px] right-[24px]"
+              src={icon}
+              alt=""
+            />
+            <img className="my-[16px]" src={ranking.image} alt="" />
+            <span className="text-[14px] text-[#777]">{ranking.store}</span>
+            <h2>
+              {ranking.name} {ranking.price}円
+            </h2>
+          </div>
         </div>
       </>
     );
