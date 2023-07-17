@@ -45,7 +45,7 @@ const Members : NextPage = () => {
                                     </div>
                                 </li>
                             </Link>
-                            <Link href={"/"}>
+                            <Link href={"/ChangeMail"}>
                                 <li className="border-b-[1px] border-[#808080]">
                                     <div className="my-[20px] mx-[15px] flex place-content-between">
                                     <p className="text-[12px]">メールアドレス </p>
@@ -54,7 +54,7 @@ const Members : NextPage = () => {
                                     </div>
                                 </li>
                             </Link>
-                            <Link href={"/"}>
+                            <Link href={"/ChangingPassword"}>
                                 <li className="border-b-[1px] border-[#808080]">
                                     <div className="my-[20px] mx-[15px] flex place-content-between">
                                     <p className="text-[12px]">パスワード変更</p>

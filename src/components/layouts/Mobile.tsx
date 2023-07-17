@@ -11,7 +11,8 @@ const Mobile: NextPage<props> = ({ children }) => {
   return (
     <>
       {/* タブレット許容 */}
-      <div className={`w-full h-full max-w-[820px] ${theme.base.bg}`}>
+      {/* <div className={`w-full h-full max-w-[820px] ${theme.base.bg}`}> */}
+      <div className={`w-full h-full max-w-[428px] ${theme.base.bg}`}>
         <Header />
         {children}
         <Footer />

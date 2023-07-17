@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form";
 import ButtonLayout from "@/components/layouts/Button";
 import router from "next/router";
 
-const Name: NextPage = () => {
+const AfPassword: NextPage = () => {
     const {
     register,
     handleSubmit,
@@ -24,7 +24,7 @@ const Name: NextPage = () => {
     return (
         <Layout>
         <div className="w-full h-[65%] px-[16px]">
-            <p className="text-left text-lg my-[30px] font-bold">ニックネーム</p>
+            <p className="text-left text-lg my-[30px] font-bold">パスワード変更</p>
 
             <form
                 onSubmit={handleSubmit(onSubmit)}
@@ -34,18 +34,23 @@ const Name: NextPage = () => {
             <div>
                 <input
                 className="bg-[#f4f4f4] w-full p-[10px] text-[15px] rounded"
-                type="text"
-                defaultValue={users[0].name}
-                // value={users[0].name}
-                {...register("name", { required: true })}
+                type="password" 
+                placeholder="新しいパスワード" 
+                {...register("Password", {required: true, max: 100, min: 8})} 
+                />
+                <input
+                className="bg-[#f4f4f4] w-full p-[10px] text-[15px] rounded mt-[30px]"
+                type="password" 
+                placeholder="新しいパスワード（確認用）" 
+                {...register("Password", {required: true, max: 100, min: 8})} 
                 />
             </div>
 
-            <ButtonLayout text="変更する" />
+            <ButtonLayout text="パスワードを変更する" />
             </form>
         </div>
         </Layout>
     );
 };
 
-export default Name;
+export default AfPassword;
