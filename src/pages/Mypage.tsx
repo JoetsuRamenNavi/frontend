@@ -13,8 +13,8 @@ const Mypage: NextPage = () => {
   return (
     <>
       <Layout>
-        <div className=" mx-[15px]">
-          <p className="text-left text-lg my-[30px] font-bold">マイページ</p>
+        <div className=" mx-[15px] min-h-[calc(100vh_-_240px)]">
+          <p className="text-left text-lg py-[30px] font-bold">マイページ</p>
 
           <div className="bg-[#000] h-[200px] flex items-end rounded-xl p-[20px]">
             <div className=" text-white w-full h-full">

@@ -65,7 +65,7 @@ const BeforeCnt: NextPage = () => {
         </div>
       </div>
       <div className="my-[48px] w-full h-[75px] px-[16px]">
-        <Link href={"/"}>
+        <Link href={"/Entry"}>
           <button
             className={`w-full h-full ${theme.main.bg} ${theme.base.text}`}
           >

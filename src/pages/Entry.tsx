@@ -21,14 +21,14 @@ const Entry : NextPage = () =>{
     return(
         <>
         <Layout>
-            <div className="w-full h-[70vh]  px-[16px]">
-            <p className="text-left text-lg my-[30px] font-bold">ラーメンバトルエントリー</p>
+            <div className="w-full min-h-[calc(100vh_-_240px)] px-[16px]">
+            <p className="text-left text-lg py-[30px] font-bold">ラーメンバトルエントリー</p>
             <p>対戦テーマ：雪むろ酒かすラーメン</p>
             <p>開催期間 2023年12月~2024年4月</p>
 
         <form 
         onSubmit={handleSubmit(onSubmit)}
-        className="h-[85%] flex flex-col justify-between"
+        className="h-[calc(100vh_-_410px)] flex flex-col justify-between"
         >
             <div>
             <input type="text" placeholder="エントリー商品名" className="bg-[#f4f4f4] w-full p-[10px] text-[15px] rounded my-[30px]" {...register("entryName", {required: true})} />
