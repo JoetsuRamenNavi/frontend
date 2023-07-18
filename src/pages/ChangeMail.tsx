@@ -4,17 +4,20 @@ import { mypages } from "@/components/utils/mypagelistData";
 import { ListItem, ListItemText } from "@mui/material";
 import { NextPage } from "next";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import ButtonLayout from "@/components/layouts/Button";
+import { DefaultValue } from "recoil";
 import router from "next/router";
 
-const Name: NextPage = () => {
+const Mail: NextPage = () => {
     const {
     register,
     handleSubmit,
-    formState: { errors },
-    } = useForm();
+    setValue,
+    formState: { errors},
+    } = useForm(
+    );
     const onSubmit = (data: any) => {
         console.log(data);
         router.push(`/ChangedMembers`);
@@ -24,7 +27,7 @@ const Name: NextPage = () => {
     return (
         <Layout>
         <div className="w-full h-[65%] px-[16px]">
-            <p className="text-left text-lg my-[30px] font-bold">ニックネーム</p>
+            <p className="text-left text-lg my-[30px] font-bold">メールアドレス</p>
 
             <form
                 onSubmit={handleSubmit(onSubmit)}
@@ -35,9 +38,8 @@ const Name: NextPage = () => {
                 <input
                 className="bg-[#f4f4f4] w-full p-[10px] text-[15px] rounded"
                 type="text"
-                defaultValue={users[0].name}
-                // value={users[0].name}
-                {...register("name", { required: true })}
+                defaultValue={users[0].mail}
+                {...register("email", { required: true })}
                 />
             </div>
 
@@ -48,4 +50,8 @@ const Name: NextPage = () => {
     );
 };
 
-export default Name;
+export default Mail;
+function setValue(arg0: string, arg1: string) {
+    throw new Error("Function not implemented.");
+}
+
