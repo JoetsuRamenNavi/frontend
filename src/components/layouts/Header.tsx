@@ -14,13 +14,18 @@ const Header: NextPage = () => {
             <img src="/logo.png" alt="ロゴ" width={224} />
           </h1>
         </Link>
-        
+
         <Link href={"/Mypage"}>
-        <div
+          {/* <div
           className={`${theme.accent.bg} ${theme.base.text} px-[12px] py-[4px] text-[16px]`}
         >
           ログイン
-        </div>
+        </div> */}
+          <div
+            className={`pl-[7px] pr-[8px] pt-[7px] pb-[8px] ${theme.accent.bg} rounded-full flex justify-center items-center`}
+          >
+            <img src="login.png/" alt="" width={24} height={24} />
+          </div>
         </Link>
       </div>
     </>
