@@ -21,12 +21,12 @@ const Registration : NextPage = () =>{
     return(
         <>
         <Layout>
-            <div className="w-full h-[70vh]  px-[16px]">
-            <p className="text-left text-lg my-[30px] font-bold">店舗登録</p>
+            <div className="w-full min-h-[calc(100vh_-_240px)] px-[16px]">
+            <p className="text-left text-lg py-[30px] font-bold">店舗登録</p>
 
         <form 
         onSubmit={handleSubmit(onSubmit)}
-        className="h-[85%] flex flex-col justify-between"
+        className="h-[calc(100vh_-_360px)] flex flex-col justify-between"
         >
             <div>
             <input type="text"  placeholder="店舗名" className="bg-[#f4f4f4] w-full p-[10px] text-[15px] rounded mb-[30px]" {...register("StorName", {required: true})} />

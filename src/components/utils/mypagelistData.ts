@@ -9,7 +9,7 @@ export const mypages: mypage[] = [
         id: 1,
         image: "/Vote.png",
         text: "投票",
-        link: "/",
+        link: "/Vote",
     },
     {
         id: 2,

@@ -26,12 +26,12 @@ const Mail: NextPage = () => {
 
     return (
         <Layout>
-        <div className="w-full h-[70vh] px-[16px]">
-            <p className="text-left text-lg my-[30px] font-bold">メールアドレス</p>
+        <div className="w-full min-h-[calc(100vh_-_240px)] px-[16px]">
+            <p className="text-left text-lg py-[30px] font-bold">メールアドレス</p>
 
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="h-[85%] flex flex-col justify-between"
+                className="h-[calc(100vh_-_360px)] flex flex-col justify-between"
             >
           {/* <label >名前</label> */}
             <div>

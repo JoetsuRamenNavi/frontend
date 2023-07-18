@@ -13,9 +13,9 @@ const Members : NextPage = () => {
     return(
         <>
         <Layout>
-            <div className=" mx-[15px] h-[70vh] ">
+            <div className=" mx-[15px] min-h-[calc(100vh_-_240px)] ">
 
-            <p className="text-left text-lg my-[30px] font-bold">会員情報</p>
+            <p className="text-left text-lg py-[30px] font-bold">会員情報</p>
 
             <div>
             
