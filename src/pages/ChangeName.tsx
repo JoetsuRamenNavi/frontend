@@ -10,11 +10,14 @@ import ButtonLayout from "@/components/layouts/Button";
 import router from "next/router";
 
 const Name: NextPage = () => {
+    type Inputs = {
+        name:string,
+      }
     const {
     register,
     handleSubmit,
     formState: { errors },
-    } = useForm();
+    } = useForm<Inputs>();
     const onSubmit = (data: any) => {
         console.log(data);
         router.push(`/ChangedMembers`);
@@ -23,7 +26,7 @@ const Name: NextPage = () => {
 
     return (
         <Layout>
-        <div className="w-full h-[65%] px-[16px]">
+        <div className="w-full h-[70vh] px-[16px]">
             <p className="text-left text-lg my-[30px] font-bold">ニックネーム</p>
 
             <form
@@ -37,8 +40,12 @@ const Name: NextPage = () => {
                 type="text"
                 defaultValue={users[0].name}
                 // value={users[0].name}
-                {...register("name", { required: true })}
+                {...register('name', { 
+                    required: '名前を入力してね',
+                    minLength: { value: 2, message: `2文字以上にしてね`  },
+                })}
                 />
+                <p>{errors.name?.message}</p> {/* エラー表示 */}
             </div>
 
             <ButtonLayout text="変更する" />

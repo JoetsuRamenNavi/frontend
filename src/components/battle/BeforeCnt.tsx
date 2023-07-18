@@ -44,9 +44,24 @@ const BeforeCnt: NextPage = () => {
       {rankingContent(battle.ranking.second, rankings.silver)}
       {rankingContent(battle.ranking.third, rankings.bronze)}
       <div className="mt-[32px]">
-        <h2 className="text-center my-[24px]">参加方法</h2>
-        <div className="w-full h-[200px] flex justify-center items-center bg-[#ccc]">
-          <p className="font-bold">投票手順を図で説明</p>
+        <h2 className="text-center my-[24px] ">参加方法</h2>
+        <div className="w-full items-center px-[15px]">
+          {/* <p className="font-bold">投票手順を図で説明</p> */}
+          <div>
+            <h3>一般向け</h3>
+            <p>① まずは会員登録</p>
+            <p>② 参加店舗から機になるラーメンを見つけて実際に食べに行く</p>
+            <p>③ 食べたら、店内にあるQRコードを読み取り投票権を獲得</p>
+            <p>④ 投票ページから美味しかったお店に投票</p>
+          </div>
+          <div className="mt-[30px]">
+            <h3>店舗向け</h3>
+            <p>① まずは一般と同じように店舗代表者が会員登録</p>
+            <p>② 次に①で登録したアカウントを使って店舗登録(店舗の基本情報を入力)</p>
+            <p>③ ラーメンバトルエントリー期間中にエントリーフォームから参加登録</p>
+            <p>④ お客さんにオリジナルラーメンを食べてもらい投票してもらう</p>
+            <p>⑤ 結果発表！グランプリを目指そう</p>
+          </div>
         </div>
       </div>
       <div className="my-[48px] w-full h-[75px] px-[16px]">

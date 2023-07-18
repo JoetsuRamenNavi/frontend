@@ -21,7 +21,7 @@ const Entry : NextPage = () =>{
     return(
         <>
         <Layout>
-            <div className="w-full h-[65%] px-[16px]">
+            <div className="w-full h-[70vh]  px-[16px]">
             <p className="text-left text-lg my-[30px] font-bold">ラーメンバトルエントリー</p>
             <p>対戦テーマ：雪むろ酒かすラーメン</p>
             <p>開催期間 2023年12月~2024年4月</p>

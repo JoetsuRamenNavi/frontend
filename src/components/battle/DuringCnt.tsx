@@ -38,8 +38,20 @@ const DuringCnt: NextPage = () => {
       </div>
       <div className="mt-[32px]">
         <h2 className="text-center my-[24px]">参加方法</h2>
-        <div className="w-full h-[200px] flex justify-center items-center bg-[#ccc]">
-          <p className="font-bold">投票手順を図で説明</p>
+        <div className="w-full items-center px-[15px]">
+          {/* <p className="font-bold">投票手順を図で説明</p> */}
+          <div>
+            <h3>一般向け</h3>
+            <p>① まずは会員登録</p>
+            <p>② 参加店舗から機になるラーメンを見つけて実際に食べに行く</p>
+            <p>③ 食べたら、店内にあるQRコードを読み取り投票権を獲得</p>
+            <p>④ 投票ページから美味しかったお店に投票</p>
+          </div>
+          <div className="mt-[30px] mb-[50px]">
+            <h3>店舗向け</h3>
+            <p>エントリーは終了しました。</p>
+            <p>次回の開催をお待ち下さい。</p>
+          </div>
         </div>
       </div>
     </>
