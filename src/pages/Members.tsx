@@ -13,7 +13,7 @@ const Members : NextPage = () => {
     return(
         <>
         <Layout>
-            <div className=" mx-[15px]">
+            <div className=" mx-[15px] h-[70vh] ">
 
             <p className="text-left text-lg my-[30px] font-bold">会員情報</p>
 
@@ -37,7 +37,7 @@ const Members : NextPage = () => {
                     <div className="w-full ">
                         <ul>
                             <Link href={"/ChangeName"}>
-                                <li className="border-b-[1px] border-[#808080]">
+                                <li className="border-b-[1px] border-[#808080] ">
                                     <div className="my-[20px] mx-[15px] flex place-content-between">
                                     <p className="text-[12px]">ニックネーム </p>
                                     <p className="text-[12px]">{users[0].name}</p>

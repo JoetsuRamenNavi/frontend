@@ -52,7 +52,7 @@ const Password: NextPage = () => {
 
     return (
         <Layout>
-        <div className="w-full h-[65%] px-[16px]">
+        <div className="w-full h-[70vh]  px-[16px]">
             <p className="text-left text-lg my-[30px] font-bold">パスワード変更</p>
 
             <form
